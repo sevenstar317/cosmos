@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>add minutes pop</title>
+    
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 10]>
+      <script src="./js/html5shiv.js"></script>
+      <script src="./js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="add-funds-modal-id" tabindex="-1" role="dialog" aria-labelledby="add-funds-modal-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Add Funds</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="../../images/add-funds-icon.png" alt=""/>
+                    <div class="clearfix">
+                        <img class="grid-lines" src="../../images/grid-lines.png" alt=""/>
+                    </div>
+                    <div class="clearfix text-center selectors">
+                        <div class="col col-xs-4">
+                            <a href="" class="add-selector">
+                                <span class="value">5</span><span class="unity">min</span>
+                                <span class="hover">+ ADD</span>
+                            </a>
+                        </div>
+                        <div class="col col-xs-4">
+                            <a href="" class="add-selector">
+                                <span class="value">10</span><span class="unity">min</span>
+                                <span class="hover">+ ADD</span>
+                            </a>
+                        </div>
+                        <div class="col col-xs-4">
+                            <a href="" class="add-selector">
+                                <span class="value">15</span><span class="unity">min</span>
+                                <span class="hover">+ ADD</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#add-funds-modal-id').modal();
+        });
+    </script>
+
+</body>
+</html>

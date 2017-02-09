@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>live chat - email chat pop2-fix</title>
+    
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 10]>
+      <script src="./js/html5shiv.js"></script>
+      <script src="./js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="email-chat-modal-id" tabindex="-1" role="dialog" aria-labelledby="email-chat-modal-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Email Chat</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="../../images/email-chat-icon.png" alt=""/>
+                    <div class="headline">Email this conversation directly to your email</div>
+                </div>
+                <div class="modal-subbody">
+                    <div class="clearfix text-left">
+                        <ul class="col col-xs-4 list-unstyled">
+                            <li><img src="../../images/green-star.png" alt=""/> Love</li>
+                            <li><img src="../../images/green-star.png" alt=""/> Money</li>
+                            <li><img src="../../images/green-star.png" alt=""/> Obstacles</li>
+                        </ul>
+                        <ul class="col col-xs-4 list-unstyled">
+                            <li><img src="../../images/green-star.png" alt=""/> Relationships</li>
+                            <li><img src="../../images/green-star.png" alt=""/> Health</li>
+                            <li><img src="../../images/green-star.png" alt=""/> Direction</li>
+                        </ul>
+                        <ul class="col col-xs-4 list-unstyled">
+                            <li><img src="../../images/green-star.png" alt=""/> Career</li>
+                            <li><img src="../../images/green-star.png" alt=""/> Future</li>
+                            <li><img src="../../images/green-star.png" alt=""/> More!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="" class="btn btn-primary btn-blue btn-lg">send</a>
+                    <p>Your terms and conditions text would go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#email-chat-modal-id').modal();
+        });
+    </script>
+
+</body>
+</html>

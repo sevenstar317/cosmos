@@ -1,0 +1,12 @@
+<h1>Rooms</h1>
+
+<div>
+  <ul>
+    <li ng-repeat="room in vm.rooms">
+      <a class="btn"
+        ui-sref="agents({room: room})"
+        ng-bind="room"
+        ></a>
+    </li>
+  </ul>
+</div>

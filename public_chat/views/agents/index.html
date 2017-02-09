@@ -1,0 +1,25 @@
+<h1>Agents</h1>
+
+<form ng-submit="vm.connectAgent()" ng-if="!vm.agentConnected">
+  <div>
+    <input type="text" placeholder="Agent Name" ng-model="vm.agent.name" />
+  </div>
+
+  <button type="submit">Connect Agent</button>
+
+  <pre ng-bind="vm.agent | json"></pre>
+</form>
+
+<form ng-if="vm.agentConnected" ng-submit="vm.sendMessage()">
+  <textarea ng-model="vm.message"></textarea>
+  <button type="submit">Send mesage</button>
+</form>
+
+<h3>Messages</h3>
+<div>
+  <ul>
+    <li ng-repeat="message in vm.messages">
+      <strong ng-bind="message.agent.name"></strong> <em>({{message.when | date : 'short'}})</em> - <span ng-bind="message.message"></span>
+    </li>
+  </ul>
+</div>
